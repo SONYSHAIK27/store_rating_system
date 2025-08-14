@@ -98,6 +98,71 @@ JWT_SECRET=your_secret_key
 - `POST /api/ratings` - Submit rating
 - `PUT /api/ratings/:id` - Update rating
 
+## 🚀 **Quick Start for Evaluators**
+
+### **System Administrator Access**
+Use these credentials to log in and test all admin features:
+
+```
+Email: admin@roxiler.com
+Password: admin123
+Role: System Administrator
+```
+
+### **Pre-configured Test Data**
+The system comes with sample data for testing:
+
+#### **Users:**
+- **Admin User**: admin@roxiler.com (System Administrator)
+- **Store Owner**: yashwanth12345678900@gmail.com (Store Owner)
+- **Normal User**: yash@gmail.com (Normal User)
+
+#### **Stores:**
+- **store1**: Electronics store with ratings
+- **Sony Store**: Technology store
+
+#### **Sample Ratings:**
+- Multiple ratings with comments for testing
+
+### **Testing Steps for Evaluators**
+
+1. **Start the Application:**
+   ```bash
+   npm run install-all
+   npm run dev
+   ```
+
+2. **Access the Application:**
+   - Frontend: http://localhost:3000
+   - Backend: http://localhost:5000
+
+3. **Login as System Administrator:**
+   - Email: `admin@roxiler.com`
+   - Password: `admin123`
+
+4. **Test Admin Features:**
+   - ✅ View dashboard with total counts
+   - ✅ Create new users (Normal User, Store Owner, Admin)
+   - ✅ Create new stores
+   - ✅ View all users with role-based information
+   - ✅ View all stores with ratings
+   - ✅ Apply filters and search
+   - ✅ Change admin password
+
+5. **Test Other Roles:**
+   - **Store Owner**: Login with `yashwanth12345678900@gmail.com`
+   - **Normal User**: Login with `yash@gmail.com`
+
+### **Database Setup (if needed)**
+If you need to set up the database from scratch:
+
+```bash
+cd backend
+node database/init.js
+```
+
+This will create the database schema and insert the default admin user.
+
 ## Contributing
 
 1. Fork the repository
